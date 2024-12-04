@@ -17,7 +17,7 @@ form.elements.email.value = formData.email
 form.elements.message.value = formData.message
 
 form.addEventListener('input', (event) => {
-  formData[event.target.name] = event.target.value
+  formData[event.target.name] = event.target.value.trim()
   localStorage.setItem('feedback-form-state', JSON.stringify(formData))
 })
 
