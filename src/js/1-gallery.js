@@ -68,7 +68,4 @@ container.insertAdjacentHTML(
     .join('')
 )
 
-container.addEventListener('click', (event) => {
-  event.preventDefault()
-  new SimpleLightBox('.gallery-link', { captionsData: 'alt', captionDelay: 250 })
-})
+new SimpleLightBox('.gallery-link', { captionsData: 'alt', captionDelay: 250 })
